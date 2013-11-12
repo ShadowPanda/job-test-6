@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title Widget Test
+    meta name="description" content="Widget Test"
+    meta name="keywords" content="widget, test"
+    meta name="author" content="Paolo Insogna"
+    meta charset="utf-8"
+
+    link rel="stylesheet" type="text/css" href="/assets/lib/extjs/resources/css/ext-all.css" media="all"
+    link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css" media="all"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+  body
+    article: #viewport
+    footer
+      .text-center
+        ul.list-inline
+          li
+            span
+              ' &copy; 2013 and above
+            a href="http://github.com/ShogunPanda"
+              i.fa.fa-github
+              | ShogunPanda
+          li
+            a href="http://cowtech.it"
+              i.fa.fa-globe
+              | http://cowtech.it
+            a href="mailto:shogun@cowtech.it"
+              i.fa.fa-envelope
+              | shogun@cowtech.it
+
+    div.ribbon.hidden-xs
+      a href="http://www.italia.it" target="_blank": span Made by a proud Italian
+
+    javascript:
+      window.bootstrap_data = {polling_interval: #{@polling_interval}, end_time: "#{@end_time}"};
+
+    script type="text/javascript" src="/assets/lib/sugar-1.4.1.js" charset="utf8"
+    script type="text/javascript" src="/assets/lib/moment-2.4.0.js" charset="utf8"
+    script type="text/javascript" src="/assets/lib/d3-3.3.9.js" charset="utf8"
+    script type="text/javascript" src="/assets/lib/handlebars-1.1.2.js" charset="utf8"
+    script type="text/javascript" src="/assets/lib/extjs/ext-all.js" charset="utf8"
+    script type="text/javascript" src="/assets/javascripts/adapter.js" charset="utf8"
+    script type="text/javascript" src="/assets/javascripts/plugin.js" charset="utf8"
+    script type="text/javascript" src="/assets/javascripts/platform.js" charset="utf8"
